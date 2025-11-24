@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 30px;
+  max-width: 1627px;
+}
+
+nav{
+  height:80px ;
+  width: 100%;
+  background-color: rgb(2, 2, 33);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right:1.5rem;
+}
+
+nav .name{
+  color: rgb(243, 137, 8);
+  font-size: 38px;
+  font-weight: bolder;
+  line-height: 80px;
+}
+
+nav ul{
+  display: flex;
+  gap: 2rem;
+
+}
+
+nav ul li a{
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+
+nav ul li a:hover{
+  border-bottom: 2px solid red;
+  transition: linear 2.5s;
+}
+
+nav  .sign{
+  font-size: 18px;
+  font-weight: 600;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+
+#menu{
+  color: rgb(255, 5, 5);
+  padding: 0;
+  margin: 0;
+  font-size:25px;
+  border: none;
+}
+
+#menu{
+  display: none;
+}
+
+nav svg{
+  display: none;
+}
+
+/* Responsive design  */
+
+@media (max-width: 850px){
+  #menu{
+    display: block;
+    position: static;
+    top: 1.5rem;
+    right: 2rem;
+  }
+
+  nav ul{
+    position: fixed;
+    right: 2rem;
+    width: 25%;
+    height: 100%;
+    background: #2c3e50;
+    top: 110px;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    padding: 2rem;
+  }
+
+  nav .sign{
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 0;
+}
+
+nav svg{
+  display: block;
+  height: 2.5rem;
+  width:2.5rem ;
+  border: 2 px solid red;
+  padding: 1px;
+  position: fixed;
+  top: 7rem;
+  right: 2rem;
+
+}
+
+}
+
+
+
+
+
